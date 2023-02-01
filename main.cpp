@@ -126,7 +126,7 @@ int gamesettings()
             cout << "---------------------" << endl;
             displaysettings(rows, col, zombie);
             pf::Pause();
-            cout << endl;
+            pf::ClearScreen();
             test1_1(rows, col);
             charattributes(zombie);
         {
@@ -175,7 +175,7 @@ void GameBoard::init(int rows, int colms)
 
 void GameBoard::display(int row_, int colm_)
 {
-    cout << ".: Alien vs Zombie :." << endl;
+    cout << "   .: Alien vs Zombie :." << endl;
     cout << endl;
 
     for (int i = 0; i < colm_; ++i) // for each row
@@ -229,7 +229,7 @@ void GameBoard::display(int row_, int colm_)
     cout << endl;
 }
 
-char commands()
+/*char commands()
 {
     char userhelp[5] = "help";
     char usercommand;
@@ -250,7 +250,7 @@ char commands()
         cout << "to quit the current game => quit";
     }
     return true;
-}
+}*/
 
 int main()
 {
@@ -258,7 +258,8 @@ int main()
     cout << "Assignment (Part 1)" << endl;
     cout << "Let's Get Started!" << endl;
     pf::Pause();
-    //srand(time(NULL));
-    //gamesettings();
-    commands();
+    pf::ClearScreen();
+    srand(time(NULL));
+    gamesettings();
+    //commands();
 }
