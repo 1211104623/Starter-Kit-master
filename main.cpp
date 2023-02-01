@@ -47,7 +47,7 @@ void displaysettings(int row, int column, int zombie)
     cout << "Number of Zombie(s) : " << zombie << endl;
 }
 
-void charattributes(int z) // int r, int c, int z
+void charattributes(int z) 
 {
     int life[] = {50, 100, 100, 150, 150, 200, 250, 300};
     int numoflife = 8;
@@ -58,7 +58,10 @@ void charattributes(int z) // int r, int c, int z
     int range[] = {1, 2, 3, 4, 5};
     int numofrange = 5;
 
-    cout << "Alien    : Life 100 , Attack " << endl;
+    int alienlife = 100;
+    int alienattack = 0;
+
+    cout << "Alien    : Life " << alienlife << ", Attack " << alienattack << endl;
     for (int w = 0; w < z; ++w)
     {
         int objlife = rand() % numoflife;
@@ -229,28 +232,30 @@ void GameBoard::display(int row_, int colm_)
     cout << endl;
 }
 
-/*char commands()
+char commands()
 {
-    char userhelp[5] = "help";
-    char usercommand;
+    string commandhelp = "help";
+    string usercommand;
     cout << endl;
     cout << endl;
     cout << "enter command : ";
     cin >> usercommand ;
-    if (userhelp[5] == usercommand)
+    if (commandhelp == usercommand)
     {
-        cout << "EVERYTHING MUST BE WRITTEN IN LOWER-CASE LETTERS" ;
-        cout << "move up => up" ;
-        cout << "move down => down" ;
-        cout << "move to the right => right" ;
-        cout << "move to the left => left" ;
-        cout << "to switch direction of arrows => arrow" ;
-        cout << "to save the current game => save" ;
-        cout << "to load a game => load" ;
-        cout << "to quit the current game => quit";
+        cout << endl;
+        cout << endl;
+        cout << "EVERYTHING MUST BE WRITTEN IN LOWER-CASE LETTERS" << endl;
+        cout << "to move up => up"  << endl;
+        cout << "to move down => down"  << endl;
+        cout << "to move to the right => right"  << endl;
+        cout << "to move to the left => left"  << endl;
+        cout << "to switch direction of arrows => arrow"  << endl;
+        cout << "to save the current game => save"  << endl;
+        cout << "to load a game => load"  << endl;
+        cout << "to quit the current game => quit"  << endl;
     }
     return true;
-}*/
+}
 
 int main()
 {
@@ -261,5 +266,5 @@ int main()
     pf::ClearScreen();
     srand(time(NULL));
     gamesettings();
-    //commands();
+    commands();
 }

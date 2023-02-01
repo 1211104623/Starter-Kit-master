@@ -1,10 +1,10 @@
 # Alien vs. Zombie
 
-A C++ game that is similar to Alien Path that you can find on Google Play/App Store. The game requires the players to eliminate the zombies on the game board by cleverly navigating the aliens on a path to destroy the invading robots.
+A C++ game named Alien vs Zombie that is similar to Alien Path. The game requires the players to eliminate the zombies on the game board by cleverly navigating the aliens on a path to destroy the invading robots. Please read the user manual before starting the game.
 
-You may add one signature screenshot of your program here or above the title. Check out [this tutorial](https://www.digitalocean.com/community/tutorials/markdown-markdown-images) to learn how to do it.
+A signature screenshot of our program. Check out [the screenshot](/images/Screenshot_20230201_125103.png).
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+Please provide the YouTube link to your [Video Demo](https://youtu.be/z1iKqUoXnW4).
 
 ## Compilation Instructions
 
