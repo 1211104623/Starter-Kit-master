@@ -2,9 +2,9 @@
 
 A C++ game named Alien vs Zombie that is similar to Alien Path. The game requires the players to eliminate the zombies on the game board by cleverly navigating the aliens on a path to destroy the invading robots. Please read the user manual before starting the game.
 
-A signature screenshot of our program. Check out [the screenshot](/images/Screenshot_20230201_125103.png).
+A signature screenshot of our program. Check out [the screenshot](/images/Screenshot_20230219_050739.png).
 
-Please provide the YouTube link to your [Video Demo](https://youtu.be/z1iKqUoXnW4).
+Please provide the YouTube link to your [Video Demo](https://youtu.be/Yt95riXgGWA).
 
 ## Compilation Instructions
 
@@ -21,7 +21,7 @@ The gameboard will consists of :
 - p => pod (inflicts 10 damage to nearby zombie)
 - r => rock (hides a game object:- arrows/health/pod/spaces)
 -   => space
-Next, user will be asked to enter commands to start moving the alien.
+Next, user will be asked to enter commands to start moving the alien. (lower case only)
 The commands are :
 - up ; to move up
 - down ; to move down
